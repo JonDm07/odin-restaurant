@@ -1,50 +1,127 @@
+:root {
+  --template-border: 1px solid black;
+}
+
 html,
 body {
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
 }
 
 #content {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(img/paella-gda1765bf4_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-rows: 1fr 12fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr 12fr 1fr;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: var(--template-border);
 }
 
 header > button {
-    margin-right: 10px;
-    height: 30px;
-    width: 80px;
+  margin-right: 10px;
+  height: 30px;
+  width: 80px;
 }
 
 .hero {
-    height: 90%;
-    border: 1px solid black;
-    width: 60%;
-    justify-self: center;
-    align-self: center;
-    background-color: aliceblue;
-    text-align: center;
+  height: 90%;
+  border: var(--template-border);
+  width: 60%;
+  justify-self: center;
+  align-self: center;
+  background-color: aliceblue;
+  text-align: center;
 }
 
 .hero > p {
-    margin: 5px 5px;
+  margin: 5px 5px;
+}
+
+.hero > .image-div {
+  background-image: url(src/img/rome-g9837cc7a1_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 30%;
+  margin: 10px auto;
+  border: var(--template-border);
 }
 
 footer {
-    background-color: white;
-    border: solid 1px black;
+  background-color: white;
+  border: solid 1px black;
+}
+
+.hero.menu {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+    grid-auto-rows: 100px;
+    overflow: auto;
+    row-gap: 10px;
+}
+
+.menu > .item-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu > .item-div > .container-div {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  grid-template-columns: 2fr 3fr;
+}
+
+.menu > .item-div:nth-of-type(1) {
+  padding-top: 10px;
+}
+
+.menu > .item-div:nth-of-type(4) {
+  padding-bottom: 10px;
+}
+
+.menu > .item-div > .container-div > .picture-div {
+  border: 3px solid black;
+}
+
+.menu > .item-div:nth-of-type(1) > .container-div > .picture-div {
+  background-image: url(src/img/paella-gdef509453_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu > .item-div:nth-of-type(2) > .container-div> .picture-div {
+  background-image: url(src/img/pexels-chitokan-c-2087748.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu > .item-div:nth-of-type(3) > .container-div > .picture-div {
+  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu > .item-div:nth-of-type(4) > .container-div > .picture-div {
+  background-image: url(src/img/gazpacho-gd5ad6d20e_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
 }
