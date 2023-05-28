@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Pangolin';
+  src: url(src/fonts/Pangolin-Regular.ttf);
+}
+
+* {
+  font-family: 'Pangolin';
+}
+
 :root {
   --template-border: 1px solid black;
 }
@@ -86,6 +95,10 @@ footer {
   grid-template-columns: 2fr 3fr;
 }
 
+.menu > .item-div > .container-div > .text-div {
+  padding: 10px;
+}
+
 .menu > .item-div:nth-of-type(1) {
   padding-top: 10px;
 }
@@ -96,32 +109,23 @@ footer {
 
 .menu > .item-div > .container-div > .picture-div {
   border: 3px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .menu > .item-div:nth-of-type(1) > .container-div > .picture-div {
-  background-image: url(src/img/paella-gdef509453_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
 }
 
 .menu > .item-div:nth-of-type(2) > .container-div> .picture-div {
-  background-image: url(src/img/pexels-chitokan-c-2087748.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(src/img/croquettes-g7ecdfd7c9_640.jpg);
 }
 
 .menu > .item-div:nth-of-type(3) > .container-div > .picture-div {
-  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(src/img/sandra-wei-Z0IQ_TX-fHU-unsplash.jpg);
 }
 
 .menu > .item-div:nth-of-type(4) > .container-div > .picture-div {
   background-image: url(src/img/gazpacho-gd5ad6d20e_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center
 }
