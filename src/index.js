@@ -1,5 +1,6 @@
 import { initialHomePage, homePageSwitch } from "./homepage";
 import { menuPage } from "./menu";
+import { contactPage } from "./contact";
 
 initialHomePage();
 
@@ -17,4 +18,12 @@ btns[1].addEventListener("click", () => {
   hero.remove();
 
   menuPage();
+
 });
+
+btns[2].addEventListener('click', () => {
+  const hero = document.querySelector(".hero");
+  hero.remove();
+
+  contactPage()
+})
