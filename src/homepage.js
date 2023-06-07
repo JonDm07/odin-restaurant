@@ -1,3 +1,6 @@
+const restaurantName = "Random restaurant name";
+const paraText = "Random restaurant invitation and description text";
+
 export function initialHomePage() {
   const content = document.querySelector("#content");
   const header = document.createElement("header");
@@ -18,11 +21,11 @@ export function initialHomePage() {
   btns[2].textContent = "Contact";
 
   const hero = document.createElement("div");
-  hero.classList.add("hero");
+  hero.classList.add("hero", "home");
   content.appendChild(hero);
 
   const heroHeader = document.createElement("h1");
-  heroHeader.textContent = "Custodia Cajigas";
+  heroHeader.textContent = restaurantName;
   hero.appendChild(heroHeader);
 
   const heroImageDiv = document.createElement("div");
@@ -30,8 +33,7 @@ export function initialHomePage() {
   hero.appendChild(heroImageDiv);
 
   const aboutPara = document.createElement("p");
-  aboutPara.textContent =
-    "Renowed restaurant in the center of Granada, In bussines from 1919. We cook traditional spanish meals like Gazpacho, Paella, Croquetas and many more";
+  aboutPara.textContent = paraText;
   hero.appendChild(aboutPara);
 
   const footer = document.createElement("footer");
@@ -43,11 +45,11 @@ export function homePageSwitch() {
   const footer = document.querySelector("footer");
 
   const hero = document.createElement("div");
-  hero.classList.add("hero");
+  hero.classList.add("hero", "home");
   content.insertBefore(hero, footer);
 
   const heroHeader = document.createElement("h1");
-  heroHeader.textContent = "Custodia Cajigas";
+  heroHeader.textContent = restaurantName;
   hero.appendChild(heroHeader);
 
   const heroImageDiv = document.createElement("div");
@@ -55,7 +57,6 @@ export function homePageSwitch() {
   hero.appendChild(heroImageDiv);
 
   const aboutPara = document.createElement("p");
-  aboutPara.textContent =
-    "Renowed restaurant in the center of Granada, In bussines from 1919. We cook traditional spanish meals like Gazpacho, Paella, Croquetas and many more";
+  aboutPara.textContent = paraText;
   hero.appendChild(aboutPara);
 }

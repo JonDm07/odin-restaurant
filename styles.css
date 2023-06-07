@@ -51,19 +51,17 @@ header > button {
   align-self: center;
   background-color: aliceblue;
   text-align: center;
+  min-width: 450px
 }
 
-.hero > p {
-  margin: 5px 5px;
-}
 
 .hero > .image-div {
   background-image: url(src/img/rome-g9837cc7a1_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 30%;
-  height: 30%;
+  width: 400px;
+  height: 200px;
   margin: 10px auto;
   border: var(--template-border);
 }
@@ -71,6 +69,12 @@ header > button {
 footer {
   background-color: white;
   border: solid 1px black;
+}
+
+.hero.home {
+  display: grid;
+  grid-template-rows: 40px 225px auto;
+  row-gap: 10px
 }
 
 .hero.menu {
@@ -109,26 +113,11 @@ footer {
 
 .menu > .item-div > .container-div > .picture-div {
   border: 3px solid black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu > .item-div:nth-of-type(1) > .container-div > .picture-div {
-  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
-}
-
-.menu > .item-div:nth-of-type(2) > .container-div> .picture-div {
-  background-image: url(src/img/croquettes-g7ecdfd7c9_640.jpg);
-}
-
-.menu > .item-div:nth-of-type(3) > .container-div > .picture-div {
-  background-image: url(src/img/sandra-wei-Z0IQ_TX-fHU-unsplash.jpg);
-}
-
-.menu > .item-div:nth-of-type(4) > .container-div > .picture-div {
-  background-image: url(src/img/gazpacho-gd5ad6d20e_1280.jpg);
-}
 
 .contact {
   display: grid;
