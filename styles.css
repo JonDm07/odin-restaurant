@@ -62,6 +62,8 @@ header > button {
   background-position: center;
   width: 400px;
   height: 200px;
+  max-width: 500px;
+  max-width: 250px;
   margin: 10px auto;
   border: var(--template-border);
 }
@@ -73,16 +75,17 @@ footer {
 
 .hero.home {
   display: grid;
-  grid-template-rows: 40px 225px auto;
-  row-gap: 10px
+  grid-template-rows: minmax(40px, 80px) minmax(250px, 2fr)  minmax(120px, 2fr);
+  row-gap: 30px;
 }
+
 
 .hero.menu {
     display: grid;
     grid-template-rows: repeat(4, 300px);
     grid-auto-rows: 100px;
     overflow: auto;
-    row-gap: 10px;
+    row-gap: 80px;
 }
 
 .menu > .item-div {
