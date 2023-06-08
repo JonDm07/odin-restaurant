@@ -56,14 +56,11 @@ header > button {
 
 
 .hero > .image-div {
-  background-image: url(src/img/rome-g9837cc7a1_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   width: 400px;
   height: 200px;
-  max-width: 500px;
-  max-width: 250px;
   margin: 10px auto;
   border: var(--template-border);
 }

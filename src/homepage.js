@@ -31,6 +31,7 @@ export function initialHomePage() {
   const heroImageDiv = document.createElement("div");
   heroImageDiv.classList.add("image-div");
   hero.appendChild(heroImageDiv);
+  heroImageDiv.textContent = "Random restaurant image";
 
   const aboutPara = document.createElement("p");
   aboutPara.textContent = paraText;
@@ -55,6 +56,7 @@ export function homePageSwitch() {
   const heroImageDiv = document.createElement("div");
   heroImageDiv.classList.add("image-div");
   hero.appendChild(heroImageDiv);
+  heroImageDiv.textContent = "Random restaurant image";
 
   const aboutPara = document.createElement("p");
   aboutPara.textContent = paraText;
