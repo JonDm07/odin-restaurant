@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Pangolin';
-  src: url(src/fonts/Pangolin-Regular.ttf);
+  src: url(../src/fonts/Pangolin-Regular.ttf);
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 #content {
   height: 100vh;
   width: 100vw;
-  background-image: url(src/img/paella-gda1765bf4_1920.jpg);
+  background-image: url(../src/img/paella-gda1765bf4_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
