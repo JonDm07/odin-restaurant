@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "server": "webpack serve --open"
+    "server": "webpack serve --open",
+    "pages": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
